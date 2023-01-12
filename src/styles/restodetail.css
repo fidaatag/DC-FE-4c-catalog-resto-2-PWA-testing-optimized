@@ -1,0 +1,321 @@
+main .restodetail {
+    margin-bottom: 5vh;
+}
+main .restodetail .titlecard {
+    text-align: center;
+    margin: 5vh 0;
+    font-size: xx-large;
+}
+
+main .restodetail .titlecard span.rating {
+    font-size: large;
+    font-weight: 300;
+    position: absolute;
+    margin-left: 15px;
+    font-style: italic;
+}
+
+main .restodetail .titlecard span.line {
+    width: 80%;
+    height: 1px;
+    background-color: #7a520c;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ==== Detail Resto === */
+
+main .restodetail .detailcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 7vh;
+    gap: 2vh;
+}
+
+main .restodetail .detailcontainer img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+main .restodetail .detailcontainer .detailinfo .info th {
+    text-align: left;
+    min-width: 15vh;
+    padding: 3px 0;
+}
+
+main .restodetail .detailcontainer .detailinfo .menuresto {
+    margin: 1vh auto;
+    padding-top: 20px;
+    /* position: relative; */
+    width: 95%;
+}
+
+main .restodetail .detailcontainer .detailinfo .menuresto h4.titlemenu {
+    text-align: center;
+    background-color: #f9dd94;
+    border: 2px solid #7a520c;
+    font-size: larger;
+    padding: 1vh;
+    border-radius: 10px;
+    width: 50vh;
+    /* position: absolute; */
+    /* top: -1px; */
+    /* left: 20vh; */
+    margin:  0 auto 2vh auto;
+}
+
+main .restodetail .detailcontainer .detailinfo .menuresto .menulist {
+    border-radius: 10px;
+    border: 2px solid #7a520c;
+    padding: 20px 40px 10px 40px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: auto;
+    gap: 5vh;
+}
+
+main .restodetail .detailcontainer .detailinfo .menuresto h4 {
+    padding: 8px 0;
+}
+
+main .restodetail .detailcontainer .detailinfo .menuresto ol {
+    list-style-position: inside;
+    list-style-type: none;
+    counter-reset: li; 
+    list-style: none;
+}
+
+main .restodetail .detailcontainer .detailinfo .menuresto li{
+    position: relative;
+    display: block;
+    padding: 2px 15px;
+    margin: 2px 0;
+    background: #f7b94f96;
+    color: #412b06;
+    text-decoration: none;
+    border-radius: .3em;
+    font-size: small;
+}
+
+main .restodetail .detailcontainer .detailinfo .menuresto li::before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -10px;
+    background: #f9dd94;
+    height: 15px;
+    width: 25px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: small;
+    border-radius: 5px;
+}
+
+main .restodetail .detailcontainer .desc {
+    grid-column-start:1;
+    grid-column-end:3;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+main .restodetail .detailcontainer .desc h4 {
+    font-size: larger;
+    padding-bottom: 2vh;
+
+}
+/* ==== add Favorute Buton === */
+main .restodetail .addfavorite{
+    margin: 5vh 2vh 1vh 0;
+    text-align: center;
+}
+
+button.favbutton {
+    padding: 1vh;
+    width: 40%;
+    background-color: #db0000;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 6px;
+    border-color: #db0000;
+    display: block;
+    margin: 2vh auto 0 auto;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+button.favbutton:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #db0000;
+}
+
+/* ==== add Coment === */
+main .restodetail .restocoment {
+    margin-top: 10vh;
+    font-size: larger;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+main .restodetail .restocoment span.line {
+    width: 95%;
+    height: 1px;
+    background-color: #7a520c;
+    display: block;
+}
+
+main .restodetail .restocoment .comentcontent {
+    border: 1px solid #6b490f36;
+    border-radius: 6px;
+    width: 100%;
+    margin: auto;
+    margin-top: 1vh;
+    padding: 20px;
+}
+
+main .restodetail .restocoment .comentcontent .comentitem {
+    margin-bottom: 2vh;
+    padding: 1vh;
+    background-color: #f7b94f96;
+    color: #412b06;
+    border-radius: 6px;
+}
+main .restodetail .restocoment .comentcontent .comentitem h5 {
+    font-size: 16px;
+    margin-bottom: 1vh;
+}
+
+main .restodetail .restocoment .comentcontent .comentitem span {
+    font-size: small;
+    font-weight: 300;
+    margin-left: 15px;
+} 
+
+main .restodetail .restocoment .comentcontent .comentitem p {
+    font-size: medium;
+}
+
+main .restodetail .restocoment .comentcontent .addcoment {
+    margin: auto;
+    background-color: #f7b94f96;
+    border-radius: 6px;
+    border: 2px solid #412b06;
+    padding: 3vh;
+}
+
+main .restodetail .restocoment .comentcontent .addcoment h5 {
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    text-align: center;
+}
+
+main .restodetail .restocoment .comentcontent .addcoment form {
+    display: grid;
+    
+}
+
+main .restodetail .restocoment .comentcontent .addcoment form input {
+    background-color: #fff;
+    padding: 1vh;
+    border-style: none;
+    margin-bottom: 2vh;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+main .restodetail .restocoment .comentcontent .addcoment form textarea {
+    background-color: #fff;
+    padding: 1vh;
+    border-style: none;
+    margin-bottom: 2vh;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+form input:focus,
+textarea:focus{
+    outline: 1px solid #6d5121be
+}
+
+main .restodetail .restocoment .comentcontent .addcoment button {
+    padding: 1vh;
+    width: fit-content;
+    margin: auto;
+    background-color: #412b06;
+    color: #f9dd94;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+main .restodetail .restocoment .comentcontent .addcoment button:hover {
+    background-color: #fff;
+    color: #412b06;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+    main .restodetail .detailcontainer {
+        display: block;
+    } 
+
+    main .restodetail .detailcontainer .detailinfo .menuresto h4.titlemenu {
+        left: 30vh;
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 568px) {
+    main .restodetail .detailcontainer .detailinfo .menuresto h4.titlemenu {
+        left: 15vh;
+        font-size: medium;
+    }
+
+    main .restodetail .detailcontainer .detailinfo .menuresto .menulist {
+        display: block;
+    }
+
+    main .restodetail .detailcontainer .desc p {
+        font-size: 15px;
+    }
+
+    main .restodetail .restocoment {
+        margin-left: 1vh;
+        margin-right: 1vh;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    main .restodetail .titlecard {
+        font-size: x-large;
+    }
+
+    main .restodetail .titlecard span.rating {
+        font-size: x-small;
+        margin-left: 8px;
+    }
+
+    main .restodetail .detailcontainer .detailinfo .menuresto h4.titlemenu {
+        left: 0;
+    }    
+}
+
+@media screen and (max-width: 380px) {
+    main .restodetail .detailcontainer .detailinfo .menuresto h4.titlemenu {
+        width: 30vh;
+    }
+
+    main .restodetail .detailcontainer .detailinfo .menuresto .menulist {
+        padding: 40px 20px;
+    }
+
+    main .restodetail .restocoment .comentcontent .addcoment form input {
+        width: 90%;
+    }
+}
+
+

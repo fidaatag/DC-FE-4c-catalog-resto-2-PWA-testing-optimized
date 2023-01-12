@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+}
+
+footer {
+    background-color: #473008;
+    padding: 2vh 5vh; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: auto; 
+}
+
+footer .footer1 .footerlogo{
+    display: flex;
+    color: #faeab1;
+}
+
+footer .footer1 .footerlogo img {
+    width: 8vh;
+    height: auto;
+}
+
+footer .footer1 .footerlogo h3 {
+    margin: auto 0;
+    font-size: 25px;
+}
+
+footer .footer1 .footermenu {
+    margin: 4vh 0 2vh 0;
+}
+
+footer .footer1 .footermenu a{
+    text-decoration: none;
+    color: #faeab1;;
+    padding: 2vh;
+}
+
+footer .footer1 .footermenu a:hover {
+    border-bottom:1px solid #faeab1;
+}
+
+footer .footer2 {
+    padding: 1vh 0;
+}
+
+footer .footer2 a.moreinfo {
+    display: flex;
+    text-decoration: none;
+    color: #faeab1;
+    padding: 1vh 0 0 0;
+    height: 44px;
+    width: 200px;
+}
+
+footer .footer2 .moreinfo img {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    padding: 6px;
+    margin: 4px;
+    background-color: #7a520c;
+}
+
+footer .footer2 .moreinfo p {
+    margin: auto 1vh;
+    line-height: 2vh;
+    font-size: small;
+    font-weight: 400;
+}
+
+footer .footer2 .moreinfo p:hover {
+    border-bottom: 1px solid #faeab1;
+}
+
+footer .footer3 {
+    padding: 1vh 0;
+}
+
+footer .footer3 .about {
+    color: #faeab1;
+}
+footer .footer3 .about p {
+    font-size: small;
+    margin-top: 1vh;
+}
+
+footer .footer3 .sosmed {
+    margin-top: 1vh;
+    margin-left: -1vh;
+}
+footer .footer3 .sosmed a {
+    width: 44px;
+    height: 44px;
+    padding: 2vh 1vh 2vh 1vh;
+}
+footer .footer3 .sosmed a img{
+    width: 5vh;
+    height: auto;
+    border-radius: 20%;
+    padding: 3px;
+    background-color: #7a520c;
+}
+footer .footer3 .sosmed a img:hover {
+    background-color: transparent;
+    border: 1px solid #7a520c;
+}
+
+footer .copyright {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 4vh;
+}
+
+footer .copyright p{
+    color: #faeab1;
+    font-size: small;
+    font-style: italic;
+    text-align: right;
+}
+footer .copyright span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #faeab1;
+    border-radius: 3px;
+    margin: 0 0 1vh 0;
+}
+
+
+@media screen and (max-width: 768px) { 
+    footer {
+        display: block;
+    }
+
+    footer div {
+        margin: 7vh 0;
+    }
+
+    footer .copyright p {
+        font-size: x-small;
+    }
+}
+
+

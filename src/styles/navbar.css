@@ -1,0 +1,169 @@
+nav {
+    background-color: #473008;
+    padding: 1vh 5vh; 
+    display: flex;
+    justify-content: space-between;   
+}
+
+nav .logo {
+    display: flex;
+    color: #faeab1;
+}
+
+nav .logo h1 {
+    margin: auto;
+}
+
+nav .logo img {
+    width: 8vh;
+    height: auto;
+}
+
+nav ul.menu {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    font-weight: 900;
+}
+
+nav ul.menu li a {
+    /* width: 44px;
+    height: 44px; */
+    padding: 15px;
+    margin: 0 35px;
+    text-decoration: none;
+    color: #faeab1;
+    line-height: 6vh;
+}
+
+nav ul.menu li:hover {
+    border: 1px solid #faeab1;
+    margin: auto;
+    height: 40px;
+}
+
+
+nav ul.menu li.menubooking {
+    display: none;
+}
+
+nav .booking {
+    display: flex;
+    margin: 1vh 0;
+}
+
+nav .booking button {
+    background-color: #faeab1;
+    color: #473008;
+    border: none;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+nav .booking button .BookNav{
+    font-size: 3vh;
+    font-weight: 900;
+    margin: 1vh;
+    width: 15vh;
+    text-decoration: none;
+    color: #473008;
+}
+
+nav .booking button:hover{
+    background-color: #473008;
+    border: 1px solid #faeab1;
+    cursor: pointer;
+}
+
+nav .booking button a.BookNav {
+    /* width: 44px;
+    height: 44px; */
+    padding: 2vh;
+}
+
+nav .booking button .BookNav:hover{
+    color: #faeab1;
+}
+
+nav .booking button .BookNav:focus {
+    font-size: 3vh;
+    font-weight: 900;
+    margin: 0;
+    width: 15vh;
+    padding: 8px;
+    text-decoration: none;  
+    background-color: #473008;
+    color: #faeab1;
+    border: 1px solid #faeab1;
+}
+
+
+nav #hamburger {
+    display: none;
+}
+
+
+/* Medium screen devices (768px and above) */
+@media screen and (max-width: 768px) {
+    nav ul.menu {
+        position: absolute;
+        background-color: #faeab1   ;
+        display: inline-block;
+        width: 100%;
+        height: 45vh;
+        /* right: -100%; */
+        transform: translate(-150%, 0);
+        transition: transform 0.3s ease-in-out;
+        top: 10vh;
+        padding-top: 10vh;
+        text-align: center;
+        
+    }
+    
+    nav ul.open {
+        /* right: 0%; */
+        transform: translate(-10%, 0);
+        z-index: 100;       
+    }
+    
+    nav ul.menu li {
+        padding: 2vh;
+    }
+
+    nav ul.menu li a {
+        color: #473008;
+        line-height: 2vh;
+    }
+    
+    nav ul.menu li.menubooking {
+        display: block;
+    }
+
+    nav ul.menu li:hover {
+        margin: auto;
+        width: 80%;
+        border: 3px solid #473008;
+    }    
+    
+    nav .booking button {
+        display: none;
+    }
+
+    nav #hamburger {
+        display: block;
+        margin-left: auto;
+        margin-right: 0px;      
+        color: #faeab1;
+        font-size: 5vh;
+        text-decoration: none;
+        z-index: 99;
+        width: 44px;
+        height: 44px;
+
+    }
+}
+
+
+
+
+

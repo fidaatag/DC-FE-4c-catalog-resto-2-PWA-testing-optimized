@@ -1,0 +1,16 @@
+.nofoodpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nofoodpage img {
+    width: 60%;
+}
+
+.nofoodpage p {
+    font-size: x-large;
+    font-style: italic;
+    color: #d9d9d9;
+}
