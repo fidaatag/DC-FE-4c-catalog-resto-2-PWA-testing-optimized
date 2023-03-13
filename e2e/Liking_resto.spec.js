@@ -8,11 +8,11 @@ Before(({I}) => {
 });
 
 Scenario('Showing empty liked resto', ({I}) => {
-  I.seeElement('#restocard-null');
+  I.seeElement('#nofoodpage');
 });
 
 Scenario('Liking one resto', async ({I}) => {
-  I.seeElement('#restocard-null');
+  I.seeElement('#nofoodpage');
   I.amOnPage('#/');
 
   I.waitForElement('.card-item a', 60);
@@ -63,10 +63,7 @@ Scenario('Unliking one resto', async ({I}) => {
   I.click('#removefav');
 
   I.amOnPage('/#/favorite');
-  I.seeElement('#restocard-null');
-
-  I.seeElement('.text-resto-item-not-found');
-  I.see('No restaurant favorite list here', '.text-resto-item-not-found');
+  I.seeElement('#nofoodpage');
 });
 
 Scenario('Add review resto ', async ({I}) => {
