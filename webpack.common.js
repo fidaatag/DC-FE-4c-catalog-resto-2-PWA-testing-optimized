@@ -85,7 +85,10 @@ module.exports = {
         }),
       ],
     }),
-    new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      openAnalyzer: false,
+    }),
     new TerserPlugin({
       terserOptions: {
         compress: true,
