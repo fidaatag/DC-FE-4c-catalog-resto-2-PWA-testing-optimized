@@ -88,6 +88,7 @@ module.exports = {
     new BundleAnalyzerPlugin({
       analyzerMode: 'static',
       openAnalyzer: false,
+      generateStatsFile: true,
     }),
     new TerserPlugin({
       terserOptions: {
